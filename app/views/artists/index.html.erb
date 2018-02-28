@@ -1,0 +1,27 @@
+<h1>My Awesome index.html.erb of Artists</h1>
+<table>
+  <tr>
+  <th>Name</th>
+  </tr>
+  <td><% @artists.each do |artist| %></td>
+  <tr>
+  <td><% artist.name %></td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th>Number</th>
+    <th>Artist</th>
+    <th>Edit</th>
+    <th>Delete</th>
+  </tr>
+  <% @artists.each do |artist| %>
+    <tr>
+      <td><%= artist.id %></td>
+      <td><%= artist.name %></td>
+      <td><%= link_to "Edit", edit_artist_path(artist.id) %></td>
+      <td><%= link_to "Delete", delete_artist_path(artist.id), method: 'delete' %></td>
+    </tr>
+  <% end %>
+</table>
