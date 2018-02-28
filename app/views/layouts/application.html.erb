@@ -10,13 +10,7 @@
 
   <body>
     <h1>Application.html.erb Template in Layouts</h1>
-    <ul>
-      <li><%= link_to "List Artists", artists_list_path %> </li>
-      <li><%= link_to "Song List", song_list_path %> </li>
-      <li><%= link_to "Create a Song", new_song_path %> </li>
-      <li><%= link_to "Create an Artist", new_artist_path %> </li>
-      <li>link_to "Edit an Artist", artist_path(:artist_id) = links to update action</li>
-    </ul>
-    <div class= "below_yield"><%= yield %></div>
+
+    <div class="below_yield"><%= yield %></div>
   </body>
 </html>

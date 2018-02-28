@@ -9,12 +9,12 @@ root 'songs#list'
     post 'songs/update/:id' => 'songs#update', as: :song
     delete 'songs/destroy/:id' => 'songs#destroy', as: :delete_song
 
-    get 'artists/list' => 'artists#list', as: :artist_list
-    get 'artists/new' => 'artists#new', as: :new_artist
-    post 'artists/create' => 'artists#create', as: :artists
-    get 'artists/edit/:id' => 'artists#edit', as: :edit_artist
-    post 'artists/update/:id' => 'artists#update', as: :artist
-    delete 'artists/destroy/:id' => 'artists#destroy', as: :delete_artist
+    # get 'artists/list' => 'artists#list', as: :artist_list
+    # get 'artists/new' => 'artists#new', as: :new_artist
+    # post 'artists/create' => 'artists#create', as: :artists
+    # get 'artists/edit/:id' => 'artists#edit', as: :edit_artist
+    # post 'artists/update/:id' => 'artists#update', as: :artist
+    # delete 'artists/destroy/:id' => 'artists#destroy', as: :delete_artist
 
-# resource :artists
+  resources :artists
 end
